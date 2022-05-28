@@ -12,6 +12,7 @@
   }
 
   .workouts {
+    height: fit-content;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 1.75rem;
@@ -53,10 +54,6 @@
 
   .btn-delete--all {
     margin-top: 3rem;
-  }
-
-  .msg-container {
-    height: 25vh;
   }
 }
 
