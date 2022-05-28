@@ -1,0 +1,107 @@
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  body {
+    flex-direction: column;
+  }
+
+  #map {
+    flex: none;
+  }
+
+  .workouts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1.75rem;
+  }
+
+  .form.hidden {
+    position: absolute;
+  }
+
+  .msg-overlay {
+    height: 130vh;
+  }
+}
+
+/**************************/
+/* BELOW 960px (Tablets) */
+/**************************/
+
+@media (max-width: 60em) {
+  html {
+    /* 8px /16px */
+    font-size: 50%;
+  }
+
+  .sidebar {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+
+  .workouts {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .workout {
+    margin-bottom: 0;
+    padding: 1.33rem 2rem;
+  }
+
+  .btn-delete--all {
+    margin-top: 3rem;
+  }
+
+  .msg-container {
+    height: 25vh;
+  }
+}
+
+/**************************/
+/* BELOW 768px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 48em) {
+  .workouts {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+}
+
+/**************************/
+/* BELOW 528px (Phones) */
+/**************************/
+
+@media (max-width: 33em) {
+  html {
+    /* 7px /16px */
+    font-size: 43.75%;
+  }
+
+  .sidebar {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .workout {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    padding-left: 1rem;
+    padding-right: 0;
+  }
+
+  .workout__title {
+    grid-column: 1 / 2;
+  }
+
+  .workout__edit {
+    grid-column: 2/-1;
+  }
+}

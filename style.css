@@ -61,10 +61,17 @@ a:visited {
 }
 
 .msg-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  justify-items: center;
+  row-gap: 1.75rem;
+
   position: relative;
-  height: 10rem;
-  width: 70rem;
+  height: 20vh;
+  width: 50vw;
   text-align: center;
+
   background-color: var(--color-light--2);
   border-radius: 9px;
   padding: 2rem 4rem;
@@ -74,6 +81,8 @@ a:visited {
 .msg {
   font-size: 2.5rem;
   color: var(--color-dark--1);
+  margin-bottom: 0.75rem;
+  grid-column: 1/-1;
 }
 
 .close-btn {
@@ -105,10 +114,6 @@ a:visited {
 .confirmation-btn:hover {
   background-color: var(--color-brand--2-dark);
   color: var(--color-light--2);
-}
-
-.yes--btn {
-  margin-right: 8rem;
 }
 
 /* SIDEBAR */
@@ -247,6 +252,7 @@ a:visited {
   color: var(--color-light--2);
   background-color: var(--color-brand--2);
   transition: all 0.3s;
+  margin-bottom: 1.75rem;
 }
 
 .btn-show--all:hover {
